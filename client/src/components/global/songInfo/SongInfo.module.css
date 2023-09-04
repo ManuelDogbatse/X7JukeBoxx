@@ -1,0 +1,106 @@
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.container[id=main] {
+  flex-direction: column;
+}
+.container[id=main] .songArt {
+  height: 300px;
+  width: 300px;
+  border: 7.5px solid #00ffd5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.container[id=main] .songArt img {
+  width: auto;
+  height: 100%;
+}
+.container[id=main] .songDetails {
+  height: 90px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container[id=main] .songDetails > div {
+  flex-shrink: 0;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.container[id=main] .songDetails > div:first-child {
+  height: 60px;
+}
+.container[id=main] .songDetails > div:last-child {
+  height: 30px;
+}
+.container[id=main] .songTitle {
+  font-size: 45px;
+}
+.container[id=main] .songArtist {
+  font-size: 25px;
+}
+.container[id=footer] .songArt {
+  height: 52.5px;
+  width: 52.5px;
+  margin-left: 8.75px;
+  border: 2.5px solid #00ffd5;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.container[id=footer] .songArt:hover {
+  cursor: pointer;
+  border-color: #ccfff7;
+}
+.container[id=footer] .songArt img {
+  width: auto;
+  height: 100%;
+}
+.container[id=footer] .songDetails {
+  width: 100%;
+  height: 52.5px;
+  margin-left: 8.75px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.container[id=footer] .songDetails > div {
+  height: 50%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.container[id=footer] .songDetails > div:hover {
+  cursor: pointer;
+}
+.container[id=footer] .songDetails > div:hover > p {
+  color: #ccfff7;
+}
+.container[id=footer] .songTitle {
+  font-size: 20px;
+  white-space: nowrap;
+}
+.container[id=footer] .songArtist {
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+.songTitle {
+  white-space: nowrap;
+}
+
+.songArtist {
+  white-space: nowrap;
+}

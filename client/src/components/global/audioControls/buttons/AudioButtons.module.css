@@ -1,0 +1,41 @@
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container > div {
+  flex: 1 1;
+  min-height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container > div:hover {
+  cursor: pointer;
+}
+.container[id=main] .shuffle > img,
+.container[id=main] .loop > img {
+  width: 28.8px;
+}
+.container[id=main] .prev > img,
+.container[id=main] .next > img {
+  width: 21.6px;
+}
+.container[id=main] .play > img, .container[id=main] .pause > img {
+  height: 40.8px;
+  width: 40.8px;
+}
+.container[id=footer] .shuffle > img,
+.container[id=footer] .loop > img {
+  width: 24px;
+}
+.container[id=footer] .prev > img,
+.container[id=footer] .next > img {
+  width: 18px;
+}
+.container[id=footer] .play > img, .container[id=footer] .pause > img {
+  height: 24px;
+  width: 24px;
+}

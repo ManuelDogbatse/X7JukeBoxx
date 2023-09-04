@@ -1,0 +1,9 @@
+/* Tektur Font (Link: https://fonts.google.com/specimen/Tektur )*/
+@import url("https://fonts.googleapis.com/css2?family=Tektur&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Tektur", cursive;
+}

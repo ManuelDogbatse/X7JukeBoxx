@@ -1,0 +1,77 @@
+@import "../../variables/config";
+@import "../../variables/utilities";
+
+.sidebar {
+  &[isopen="false"] {
+    display: none;
+  }
+
+  &[isopen="true"] {
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    padding-top: $navbar-height;
+    padding-bottom: $footer-height;
+  }
+}
+.content {
+  color: $primary-colour;
+  background-color: $secondary-colour;
+  height: 100%;
+  width: 270px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+.backdrop {
+  background-color: black;
+  opacity: 70%;
+  height: 100%;
+  flex-grow: 1;
+}
+
+.navWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+
+  > ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+
+    > li {
+      list-style-type: none;
+      height: 25%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+
+      > p {
+        font-size: 25px;
+      }
+    }
+  }
+}
+
+.playlistsWrap {
+  width: 100%;
+  height: 50%;
+  padding: 10px;
+}
+
+.playlists {
+  color: #000000;
+  background-color: $quaternary-colour;
+  width: 100%;
+  height: 100%;
+}

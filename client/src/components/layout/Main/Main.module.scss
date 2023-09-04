@@ -1,0 +1,13 @@
+@import "./../../variables/config";
+
+.main {
+  color: $primary-colour;
+  background-color: $quaternary-colour;
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}

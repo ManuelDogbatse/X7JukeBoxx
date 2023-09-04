@@ -1,0 +1,41 @@
+@import "./../../../variables/config";
+@import "./../../../variables/utilities";
+
+.container {
+  flex-grow: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // &[id="main"]{
+  //   background-color: $light-grey-colour;
+  // }
+}
+
+.mute {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: $footer-icon-size + 5;
+  height: $footer-icon-size + 5;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  img {
+    width: ($footer-icon-size + 5) * 0.7;
+  }
+}
+
+.volSlider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  input {
+    @include sliderStyling(100%, $tertiary-colour);
+  }
+}

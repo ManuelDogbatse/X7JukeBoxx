@@ -1,0 +1,29 @@
+$primary-colour: #00ffd5;
+$secondary-colour: #161616;
+$tertiary-colour: #000000;
+$quaternary-colour: #303030;
+$light-grey-colour: #dedede;
+
+$navbar-height: 60px;
+$footer-height: 70px;
+
+$header-font-size: 35px;
+$subheader-font-size: 20px;
+
+$song-title-max-width: 60%;
+$marquee-time: 15s;
+$marquee-start: 0%;
+$marquee-end: calc($song-title-max-width - 100%);
+
+$mobile-width: 320px;
+$tablet-width: 481px;
+$laptop-width: 769px;
+$desktop-width: 1025px;
+$xl-screen-width: 1201px;
+
+$footer-icon-size: 35px;
+
+$btn-s: 18px;
+$btn-m: 24px;
+$btn-height-l: 24px;
+$btn-width-l: 24px;

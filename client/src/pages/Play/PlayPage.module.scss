@@ -1,0 +1,55 @@
+@import "./../../components/variables/config";
+@import "./../../components/variables/utilities";
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  > div {
+    width: 100%;
+  }
+}
+
+.mnTop {
+  flex: 1 1;
+}
+
+.mnMid {
+  height: 50px;
+  padding: 0 20px;
+}
+
+.mnBot {
+  flex: 1 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  > div {
+    height: 100%;
+
+    &:first-child,
+    &:last-child {
+      flex: 1 1;
+    }
+  }
+}
+
+.mnBotMid {
+  width: 400px;
+}
+
+.mnBotLeft{
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.mnBotRight{
+  display: flex;
+  align-items: center;
+}

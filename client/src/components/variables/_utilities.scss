@@ -1,0 +1,49 @@
+@function lightenElement($colour) {
+  @return lighten($colour, 40%);
+}
+
+@mixin colourAnchor($colour) {
+  text-decoration: none;
+  color: $colour;
+
+  &:visited {
+    color: $colour;
+  }
+
+  &:hover {
+    color: lightenElement($colour);
+  }
+}
+
+@mixin sliderStyling($width, $background) {
+  background: transparent;
+  width: $width;
+  height: 10px;
+  cursor: pointer;
+
+  &::-moz-range-track {
+    width: 100%;
+    height: 100%;
+    background-color: $background;
+    border-radius: 15px;
+  }
+
+  &::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2.5px solid $background;
+    background-color: $primary-colour;
+  }
+
+  &::-moz-range-progress {
+    height: 100%;
+    border-radius: 15px;
+    background-color: $primary-colour;
+  }
+
+  &:hover::-moz-range-thumb,
+  &:hover::-moz-range-progress {
+    background-color: lightenElement($primary-colour);
+  }
+}

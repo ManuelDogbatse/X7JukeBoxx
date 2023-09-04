@@ -1,0 +1,22 @@
+@import "./../../variables/config";
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.loading {
+  width: 100%;
+  height: 100vh;
+  background-color: $tertiary-colour;
+  color: $primary-colour;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    font-size: $header-font-size;
+    text-align: center;
+  }
+}

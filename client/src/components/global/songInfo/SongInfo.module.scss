@@ -1,0 +1,129 @@
+@import "./../../variables/config";
+@import "./../../variables/utilities";
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  &[id="main"] {
+    flex-direction: column;
+
+    .songArt {
+      height: 300px;
+      width: 300px;
+      border: 7.5px solid $primary-colour;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+
+      img {
+        width: auto;
+        height: 100%;
+      }
+    }
+
+    .songDetails {
+      height: 90px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      > div {
+        flex-shrink: 0;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+
+        &:first-child {
+          height: 60px;
+        }
+
+        &:last-child {
+          height: 30px;
+        }
+      }
+    }
+
+    .songTitle {
+      font-size: 45px;
+    }
+
+    .songArtist {
+      font-size: 25px;
+    }
+  }
+
+  &[id="footer"] {
+    .songArt {
+      height: $footer-height * 0.75;
+      width: $footer-height * 0.75;
+      margin-left: $footer-height * 0.125;
+      border: 2.5px solid $primary-colour;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+
+      &:hover {
+        cursor: pointer;
+        border-color: lightenElement($primary-colour);
+      }
+
+      img {
+        width: auto;
+        height: 100%;
+      }
+    }
+
+    .songDetails {
+      width: 100%;
+      height: $footer-height * 0.75;
+      margin-left: $footer-height * 0.125;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+
+      > div {
+        height: 50%;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+
+        &:hover {
+          cursor: pointer;
+
+          > p {
+            color: lightenElement($primary-colour);
+          }
+        }
+      }
+    }
+
+    .songTitle {
+      font-size: 20px;
+      white-space: nowrap;
+    }
+
+    .songArtist {
+      font-size: 15px;
+      white-space: nowrap;
+    }
+  }
+}
+
+.songTitle {
+  white-space: nowrap;
+}
+
+.songArtist {
+  white-space: nowrap;
+}

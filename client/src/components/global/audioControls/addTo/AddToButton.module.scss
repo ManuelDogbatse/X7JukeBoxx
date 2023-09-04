@@ -1,0 +1,40 @@
+@import "./../../../variables/config";
+@import "./../../../variables/utilities";
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    img {
+      width: 50%;
+    }
+  }
+
+  &[id="main"] {
+    @extend .container;
+    div {
+      width: $footer-icon-size * 1.2;
+      height: $footer-icon-size * 1.2;
+    }
+  }
+
+  &[id="footer"] {
+    @extend .container;
+    div {
+      width: $footer-icon-size;
+      height: $footer-icon-size;
+    }
+  }
+}

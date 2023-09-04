@@ -1,0 +1,26 @@
+.container, .container[id=footer], .container[id=main] {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container div, .container[id=footer] div, .container[id=main] div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container div:hover {
+  cursor: pointer;
+}
+.container div img, .container[id=footer] div img, .container[id=main] div img {
+  width: 50%;
+}
+.container[id=main] div {
+  width: 42px;
+  height: 42px;
+}
+.container[id=footer] div {
+  width: 35px;
+  height: 35px;
+}

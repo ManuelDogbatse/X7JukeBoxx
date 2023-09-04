@@ -1,0 +1,54 @@
+@import "./../../variables/config";
+@import "./../../variables/utilities";
+
+.footer {
+  color: $primary-colour;
+  background-color: $secondary-colour;
+  width: 100%;
+  height: $footer-height;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+
+  > div:first-child {
+    flex: 1;
+  }
+
+  > div:last-child {
+    flex: 1;
+    border-right: none;
+  }
+}
+
+.ftLeft,
+.ftRight {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.ftRight {
+  justify-content: center;
+}
+
+.ftMiddle {
+  flex-shrink: 0;
+  height: 100%;
+  width: 300px;
+}
+
+.ftSongInfo {
+  height: $footer-height;
+  width: 300px;
+}
+
+.ftAddTo {
+  height: $footer-height;
+  width: 50px;
+}
+
+.ftVol {
+  flex-grow: 1;
+  height: $footer-height;
+}
